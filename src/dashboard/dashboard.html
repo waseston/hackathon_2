@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wattch Receipt · statement</title>
+  <link rel="icon" href="../../icons/icon32.png">
+  <link rel="stylesheet" href="../shared/paper.css">
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand"><img src="../../icons/icon48.png" alt="" width="34" height="34"><div><b>WATTCH</b><span>statement of your time online</span></div></div>
+    <nav id="nav" aria-label="Sections">
+      <a href="#today" data-s="today">Today</a>
+      <a href="#week" data-s="week">Week</a>
+      <a href="#trends" data-s="trends">Trends</a>
+      <a href="#focus" data-s="focus">Focus</a>
+      <a href="#method" data-s="method">Fine print</a>
+      <a href="#privacy" data-s="privacy">Your data</a>
+      <a href="#settings" data-s="settings">Settings</a>
+    </nav>
+    <div class="live small" id="liveStatus"></div>
+  </header>
+  <div id="demoBanner" class="demoBanner" hidden>
+    <span class="stamp red">demo data</span>
+    <span>These are made-up numbers for a presentation. Your real data is saved and comes back when you remove the demo.</span>
+    <button class="btn red" id="demoOff">Remove demo data</button>
+  </div>
+  <main id="main">
+    <section id="s-welcome" class="sec" hidden></section>
+    <section id="s-today" class="sec" hidden></section>
+    <section id="s-week" class="sec" hidden></section>
+    <section id="s-trends" class="sec" hidden></section>
+    <section id="s-focus" class="sec" hidden></section>
+    <section id="s-method" class="sec" hidden></section>
+    <section id="s-privacy" class="sec" hidden></section>
+    <section id="s-settings" class="sec" hidden></section>
+  </main>
+  <footer class="foot small faint">Wattch keeps every number in this browser. No account, no server, nothing sent.</footer>
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
