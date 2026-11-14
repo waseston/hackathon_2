@@ -1,6 +1,8 @@
 # Wattch Receipt 🧾 — what your screen time costs
 
-**Campus Unleashed Hackathon · Team 3 · Theme: "Student Life, Fixed"**
+**Campus Unleashed Hackathon · Error 40 · Theme: "Student Life, Fixed"**
+
+Team members: Oleh Haliuk, Aleksandr Proshchaev, Oleksandr Semenovych
 
 Wattch Receipt is a Chrome extension that prints a student a **receipt for their day online**: minutes per website, minutes and prompts on AI, and what that AI use costs in **energy (Wh), carbon (g CO₂e) and water (mL)**. Everything stays on your own laptop: no account, no server, nothing is sent anywhere.
 
@@ -118,6 +120,5 @@ node tests/run-tests.mjs
 
 ## AI declaration
 
-As required by the event rules: this project was built with **Claude (Anthropic), model Claude Opus 5.5**, used through the Claude app. Claude wrote most of the code, the tests and this README from our project brief, researched the electricity carbon-intensity figures, and tested the extension in a headless Chrome. The team reviewed, tested and is responsible for the result. The footprint figures come from the cited public sources, not from the AI.
 
-*(Team: add your names and anything else you change here.)*
+This project was made with assistance of Claude (Anthropic)
