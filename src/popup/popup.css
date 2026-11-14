@@ -1,0 +1,21 @@
+body { width: 360px; padding: 14px 12px 18px; }
+.logo { font-size: 26px; font-weight: 900; letter-spacing: .32em; margin-right: -.32em; }
+header { display: flex; flex-direction: column; gap: 1px; }
+.status { margin-top: 8px; text-align: center; }
+.status .on { color: var(--green); font-weight: 700; }
+.status .off { color: var(--ink-3); }
+section { display: flex; flex-direction: column; gap: 2px; }
+.secT { font-size: 11px; font-weight: 800; letter-spacing: .1em; color: var(--ink-2); margin-bottom: 2px; }
+.line.ai .lbl::after { content: " AI"; font-size: 9.5px; font-weight: 800; border: 1px solid currentColor; border-radius: 2px; padding: 0 3px; margin-left: 5px; vertical-align: 1px; }
+.meter { margin: 5px 0 2px; }
+.goalRow { display: flex; justify-content: space-between; align-items: center; margin-top: 4px; }
+.actions { gap: 8px; }
+.row { display: flex; gap: 6px; align-items: center; }
+.row select { flex: 1; min-width: 0; }
+.row .btn { white-space: nowrap; }
+#focusIdle span { flex: 1; }
+#focusRun .stamp { flex: 1; text-align: center; transform: rotate(-2deg); font-size: 13px; }
+footer { margin-top: 12px; display: flex; flex-direction: column; gap: 3px; align-items: stretch; }
+.wide { margin-top: 10px; padding: 9px; }
+.empty { color: var(--ink-3); text-align: center; padding: 4px 0; }
+.stampWrap { text-align: center; margin: 6px 0 2px; }

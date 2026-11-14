@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Wattch Receipt</title>
+  <link rel="stylesheet" href="../shared/paper.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="sheet">
+    <main class="paper torn" id="receipt">
+      <header class="center">
+        <div class="logo">WATTCH</div>
+        <div class="small up muted">receipt · your day online</div>
+        <div class="small faint" id="meta">…</div>
+      </header>
+      <div class="status small" id="status"></div>
+      <hr class="rule">
+      <section id="items" aria-label="Sites today"></section>
+      <hr class="rule">
+      <section id="time"></section>
+      <hr class="rule">
+      <section id="ai" aria-label="AI use"></section>
+      <hr class="rule">
+      <section id="fp" aria-label="Footprint"></section>
+      <hr class="rule double">
+      <section id="total"></section>
+      <hr class="rule">
+      <section class="actions">
+        <div class="row">
+          <select id="logSite" aria-label="AI service"></select>
+          <button class="btn" id="plus" title="Count a prompt Wattch missed">+1 prompt</button>
+          <button class="btn" id="minus" title="Remove one prompt">−1</button>
+        </div>
+        <div class="row" id="focusIdle">
+          <span class="small up muted">Focus</span>
+          <button class="btn blue" data-min="25">25 min</button>
+          <button class="btn blue" data-min="50">50 min</button>
+        </div>
+        <div class="row" id="focusRun" hidden>
+          <span class="stamp blue small" id="focusLeft">focus</span>
+          <button class="btn red" id="focusStop">Stop</button>
+        </div>
+      </section>
+      <footer class="center">
+        <div id="barcode"></div>
+        <div class="small up">Thank you for looking</div>
+        <div class="small faint">Stored on this laptop only · 0 bytes sent</div>
+        <button class="btn solid wide" id="openDash">Open full statement →</button>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>
